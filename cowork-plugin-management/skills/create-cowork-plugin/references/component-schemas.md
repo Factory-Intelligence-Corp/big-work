@@ -9,11 +9,11 @@ Detailed format specifications for every plugin component type. Reference this w
 
 ### Frontmatter Fields
 
-| Field         | Required | Type   | Description                                   |
-| ------------- | -------- | ------ | --------------------------------------------- |
-| `name`        | Yes      | String | Skill identifier                              |
-| `description` | Yes      | String | Third-person description with trigger phrases |
-| `version`     | No       | String | Semver version                                |
+| Field         | Required | Type   | Description                                             |
+| ------------- | -------- | ------ | ------------------------------------------------------- |
+| `name`        | Yes      | String | Skill identifier (lowercase, hyphens; matches dir name) |
+| `description` | Yes      | String | Third-person description with trigger phrases           |
+| `metadata`    | No       | Map    | Arbitrary key-value pairs (e.g., `version`, `author`)   |
 
 ### Example Skill
 
@@ -24,7 +24,8 @@ description: >
   This skill should be used when the user asks to "design an API",
   "create API endpoints", "review API structure", or needs guidance
   on REST API best practices, endpoint naming, or request/response design.
-version: 0.1.0
+metadata:
+  version: "0.1.0"
 ---
 ```
 

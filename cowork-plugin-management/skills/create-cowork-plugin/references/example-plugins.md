@@ -150,7 +150,8 @@ description: >
   This skill should be used when the user asks about "coding standards",
   "style guide", "naming conventions", "code formatting rules", or needs
   guidance on project-specific code quality expectations.
-version: 0.1.0
+metadata:
+  version: "0.1.0"
 ---
 ```
 
